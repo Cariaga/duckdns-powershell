@@ -38,7 +38,7 @@ Param (
 	[String]$IP
 )
 
-$URL = "https://www.duckdns.org/update?domains={0}&token={1}&ip={2}" -F $Domains, $Token, $IP
+$URL = "https://www.duckdns.org/update?domains={0}&token={1}&ip={2}[&verbose=true][&clear=true]" -F $Domains, $Token, $IP
 
 Write-Debug "`$URL set to $URL"
 
